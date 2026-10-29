@@ -1,0 +1,17 @@
+Mini SOC Log Analyzer v1.0.0
+----------------------------------------------------------------
+Input        : auth_sample.log
+Lines read   : 183  (events: 85, skipped: 98)
+Logins       : 55 failed, 30 successful, 9 unique IPs
+Rule         : >= 5 failed logins within 5 min
+Alerts       : 5  (HIGH 2, MEDIUM 3)
+
+  ID        SEVERITY  RULE                    SOURCE IP         COUNT
+  ALERT-001 HIGH      repeated-failed-logins  203.0.113.45         24
+  ALERT-002 HIGH      success-after-failures  192.0.2.88            7
+  ALERT-003 MEDIUM    repeated-failed-logins  203.0.113.99          7
+  ALERT-004 MEDIUM    repeated-failed-logins  198.51.100.77         6
+  ALERT-005 MEDIUM    repeated-failed-logins  192.0.2.88            7
+
+Report saved : sample_output/sample_report.md
+Reminder     : alerts are leads to investigate, not proof of an attack.

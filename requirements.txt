@@ -1,0 +1,2 @@
+# This project uses only the Python standard library (Python 3.9 or newer).
+# No packages need to be installed to run the tool or its tests.

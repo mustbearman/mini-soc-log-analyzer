@@ -1,0 +1,60 @@
+Captured: 2026-10-29 10:01 UTC  |  Python 3.12.3  |  command: python -m unittest discover -v
+
+test_empty_file (tests.test_cli.CliTests.test_empty_file) ... ok
+test_invalid_threshold_is_rejected (tests.test_cli.CliTests.test_invalid_threshold_is_rejected) ... ok
+test_invalid_window_is_rejected (tests.test_cli.CliTests.test_invalid_window_is_rejected) ... ok
+test_larger_window_flags_slow_attacker (tests.test_cli.CliTests.test_larger_window_flags_slow_attacker) ... ok
+test_lower_threshold_flags_the_near_miss (tests.test_cli.CliTests.test_lower_threshold_flags_the_near_miss) ... ok
+test_missing_file (tests.test_cli.CliTests.test_missing_file) ... ok
+test_sample_log_produces_expected_alerts (tests.test_cli.CliTests.test_sample_log_produces_expected_alerts) ... ok
+test_unwritable_output_path (tests.test_cli.CliTests.test_unwritable_output_path) ... ok
+test_wrong_format_file (tests.test_cli.CliTests.test_wrong_format_file) ... ok
+test_alert_contents (tests.test_detector.RepeatedFailuresTests.test_alert_contents) ... ok
+test_below_threshold_no_alert (tests.test_detector.RepeatedFailuresTests.test_below_threshold_no_alert) ... ok
+test_bigger_window_catches_the_slow_attacker (tests.test_detector.RepeatedFailuresTests.test_bigger_window_catches_the_slow_attacker) ... ok
+test_different_ips_are_not_combined (tests.test_detector.RepeatedFailuresTests.test_different_ips_are_not_combined) ... ok
+test_exactly_threshold_alerts_medium (tests.test_detector.RepeatedFailuresTests.test_exactly_threshold_alerts_medium) ... ok
+test_failures_spread_beyond_window_do_not_alert (tests.test_detector.RepeatedFailuresTests.test_failures_spread_beyond_window_do_not_alert) ... ok
+test_one_long_burst_gives_one_alert (tests.test_detector.RepeatedFailuresTests.test_one_long_burst_gives_one_alert) ... ok
+test_successful_logins_do_not_count_as_failures (tests.test_detector.RepeatedFailuresTests.test_successful_logins_do_not_count_as_failures) ... ok
+test_three_times_threshold_is_high (tests.test_detector.RepeatedFailuresTests.test_three_times_threshold_is_high) ... ok
+test_threshold_is_configurable (tests.test_detector.RepeatedFailuresTests.test_threshold_is_configurable) ... ok
+test_two_separate_bursts_give_two_alerts (tests.test_detector.RepeatedFailuresTests.test_two_separate_bursts_give_two_alerts) ... ok
+test_unsorted_input_is_handled (tests.test_detector.RepeatedFailuresTests.test_unsorted_input_is_handled) ... ok
+test_failures_after_the_success_do_not_count (tests.test_detector.SuccessAfterFailuresTests.test_failures_after_the_success_do_not_count) ... ok
+test_few_failures_then_success_is_fine (tests.test_detector.SuccessAfterFailuresTests.test_few_failures_then_success_is_fine) ... ok
+test_high_alerts_sort_before_medium (tests.test_detector.SuccessAfterFailuresTests.test_high_alerts_sort_before_medium) ... ok
+test_old_failures_outside_window_do_not_match (tests.test_detector.SuccessAfterFailuresTests.test_old_failures_outside_window_do_not_match) ... ok
+test_success_after_enough_failures_is_high (tests.test_detector.SuccessAfterFailuresTests.test_success_after_enough_failures_is_high) ... ok
+test_success_from_a_different_ip_does_not_match (tests.test_detector.SuccessAfterFailuresTests.test_success_from_a_different_ip_does_not_match) ... ok
+test_success_without_failures_is_fine (tests.test_detector.SuccessAfterFailuresTests.test_success_without_failures_is_fine) ... ok
+test_empty_summary (tests.test_detector.SummaryTests.test_empty_summary) ... ok
+test_summary_numbers (tests.test_detector.SummaryTests.test_summary_numbers) ... ok
+test_accepted_login (tests.test_parser.ParseLineTests.test_accepted_login) ... ok
+test_failed_for_invalid_user_extracts_real_username (tests.test_parser.ParseLineTests.test_failed_for_invalid_user_extracts_real_username) ... ok
+test_failed_password (tests.test_parser.ParseLineTests.test_failed_password) ... ok
+test_garbage_and_empty_lines (tests.test_parser.ParseLineTests.test_garbage_and_empty_lines) ... ok
+test_impossible_date_is_rejected (tests.test_parser.ParseLineTests.test_impossible_date_is_rejected) ... ok
+test_invalid_ip_is_rejected (tests.test_parser.ParseLineTests.test_invalid_ip_is_rejected) ... ok
+test_ipv6_is_accepted (tests.test_parser.ParseLineTests.test_ipv6_is_accepted) ... ok
+test_non_login_sshd_lines_are_ignored (tests.test_parser.ParseLineTests.test_non_login_sshd_lines_are_ignored) ... ok
+test_single_digit_day_is_space_padded (tests.test_parser.ParseLineTests.test_single_digit_day_is_space_padded) ... ok
+test_year_comes_from_argument (tests.test_parser.ParseLineTests.test_year_comes_from_argument) ... ok
+test_counts (tests.test_parser.ParseLinesAndFileTests.test_counts) ... ok
+test_directory_instead_of_file (tests.test_parser.ParseLinesAndFileTests.test_directory_instead_of_file) ... ok
+test_file_with_bad_bytes_does_not_crash (tests.test_parser.ParseLinesAndFileTests.test_file_with_bad_bytes_does_not_crash) ... ok
+test_missing_file (tests.test_parser.ParseLinesAndFileTests.test_missing_file) ... ok
+test_alert_table_and_ids (tests.test_reporter.ReportTests.test_alert_table_and_ids) ... ok
+test_contains_disclaimer_and_sections (tests.test_reporter.ReportTests.test_contains_disclaimer_and_sections) ... ok
+test_evidence_list_is_shortened (tests.test_reporter.ReportTests.test_evidence_list_is_shortened) ... ok
+test_filename_is_not_backslash_escaped_inside_code_span (tests.test_reporter.ReportTests.test_filename_is_not_backslash_escaped_inside_code_span) ... ok
+test_long_values_are_truncated (tests.test_reporter.ReportTests.test_long_values_are_truncated) ... ok
+test_markdown_injection_in_username_is_neutralised (tests.test_reporter.ReportTests.test_markdown_injection_in_username_is_neutralised) ... ok
+test_method_text_from_log_is_escaped_in_description (tests.test_reporter.ReportTests.test_method_text_from_log_is_escaped_in_description) ... ok
+test_no_alerts_message_does_not_claim_safety (tests.test_reporter.ReportTests.test_no_alerts_message_does_not_claim_safety) ... ok
+test_write_report_creates_missing_folder (tests.test_reporter.ReportTests.test_write_report_creates_missing_folder) ... ok
+
+----------------------------------------------------------------------
+Ran 53 tests in 0.024s
+
+OK
